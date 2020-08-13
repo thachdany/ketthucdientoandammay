@@ -1,0 +1,12 @@
+---
+applications:
+- name: webbanhoa
+  memory: 679M
+  instances: 1
+  path: .
+  buildpacks:
+    - php_buildpack
+  services:
+  - mysql
+  routes:
+  - route: webbanhoa.cfapps.io
